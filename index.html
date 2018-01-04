@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/f4b11be972.js"></script>
+  <link rel="stylesheet" href="styles/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="col-12">
+      <img src="img/flexy-logo.png" alt="Logo" class="logo">
+    </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Specials</a>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </nav>
+      <div class="mobile-menu">
+        <a href="#">Menu</a>
+        <div class="menu" onClick="Rotate(this);Dropdown();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div id="Dropdown" class="dropdown">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Specials</a>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+  </header>
+  <div class="row">
+    <div class="col-12">
+      <img src="img/kite.png" alt="Kite">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 style="padding: 2%;"">
+      <h2 class="dark">Welcome to Flexy!</h2>
+    </div>
+  </div>
+  <div class="row" style="background-color: #3C8BB6; padding: 5% 0 3%;">
+    <div class="col-12">
+      <img src="img/paper.png" alt="Kite">
+    </div>
+  </div>
+  <div class="row" style="background-color: #F6931E;">
+    <div class="col-11">
+      <h2>Get ready for take off!</h2>
+    </div>
+    <div class="col-3">
+      <img class="circle" src="img/take-off.png" alt="Take off">
+    </div>
+  </div>
+  <div class="row" style="background-color: #1ABC9C;">
+    <div class="col-10">
+      <h2>We're flying around the globe.</h2>
+    </div>
+    <div class="col-3">
+      <img class="circle" src="img/orange-globe.png" alt="Orange globe">
+    </div>
+  </div>
+  <div class="row" style="background-color: #E5EF3F;">
+    <div class="col-9">
+      <h2 class="dark">Above the clouds &amp; over the sea.</h2>
+    </div>
+    <div class="col-3">
+      <img class="circle" src="img/waves.png" alt="Waves">
+    </div>
+  </div>
+  <div class="row" style="background-color: #34495E;">
+    <div class="col-8">
+      <h2>In just 42 hours and 27 minutes.</h2>
+    </div>
+    <div class="col-3">
+      <img class="circle" src="img/plane.png" alt="Plane">
+    </div>
+  </div>
+  <div class="row" style="background-color: #00AFE1;">
+    <div class="col-7">
+      <h2>So come along for the ride!</h2>
+    </div>
+    <div class="col-3">
+      <img class="circle" src="img/paper-blue.png" alt="Blue paper">
+    </div>
+  </div>
+  <div class="row" style="background-color: #66D4FF">
+    <div class="col-12">
+      <img src="img/plane-background.png" alt="Background plane">
+    </div>
+  </div>
+  <div class="row" style="background-color: #66D4FF">
+    <div class="col-12">
+      <h2>Follow Us</h2>
+    </div>
+  </div>
+  <div class="row" style="background-color: #66D4FF">
+    <div class="col-12">
+      <ul class="social">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <footer class="row">
+    <div class="col-12">
+      <p>&copy; Flexy.</p>
+    </div>
+  </footer>
+</div> <!-- End of Wrapper -->
+<script>
+  function Rotate(x) {
+    x.classList.toggle("change");
+  }
+  function Dropdown() {
+    document.getElementById("Dropdown").classList.toggle("show");
+  }
+</script>
+</body>
+</html>
